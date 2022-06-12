@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "ACgBA,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACP,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;CACpB;;AAED,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,KAAK;CACjB;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAjBE,QAAQ,EAAE,UAAU;EAkBjC,KAAK,EArBa,OAAO;EAsBzB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_base.scss",
+        "../scss/_typography.scss",
+        "../scss/_sidebar.scss",
+        "../scss/_header.scss",
+        "../scss/_realtors.scss",
+        "../scss/_features.scss",
+        "../scss/_story.scss",
+        "../scss/_homes.scss",
+        "../scss/_gallery.scss",
+        "../scss/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
