@@ -39,3 +39,49 @@ advanced css course project #3
   }
 }
 ```
+
+
+### Homes Section
+
+* 房子卡片
+
+![](https://i.imgur.com/PK7KsYX.png)
+
+將卡片做成兩欄 然後將名字和愛心的icon 設置跟 img 一樣的 row，再透過 z-index 去覆蓋
+
+```scss
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5rem;
+
+  &__img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
+  }
+
+  &__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    fill: $color-primary;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem;
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
+    transform: translateY(50%);
+
+    // 略
+  }
+}
+```
