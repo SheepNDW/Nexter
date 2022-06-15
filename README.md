@@ -18,6 +18,8 @@ advanced css course project #3
 
 * 使用 grid 布局來製作單一 feature 元件
 
+![](https://i.imgur.com/HMPnJAe.png)
+
 ```scss
 .feature {
   display: grid;
@@ -82,6 +84,52 @@ advanced css course project #3
     transform: translateY(50%);
 
     // 略
+  }
+}
+```
+
+### Gallery
+
+* 圖片牆
+
+![](https://i.imgur.com/1NijEs3.jpg)
+
+透過 CSS Grid 和 img 的 `object-fit` 屬性來實現圖片牆的展示
+
+```scss
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  // 使用 vw 單位讓 row 根據螢幕寬度去自適應
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+
+  &__item {
+    &--1 {
+      grid-row: 1 / span 2;
+      grid-column: 1 / span 2;
+    }
+
+    &--2 {
+      grid-row: 1 / span 3;
+      grid-column: 3 / span 3;
+    }
+
+    &--3 {
+      grid-row: 1 / span 2;
+      grid-column: 6 / span 1;
+    }
+
+    // 略...
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // 要同時設定寬和高才能使 object-fit 生效
+    object-fit: cover;
   }
 }
 ```
