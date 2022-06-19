@@ -1,7 +1,6 @@
 # Nexter
 
-advanced css course project #3
-
+hands-on project from the udemy course by Jonas Schmedtmann
 
 ## Notes
 
